@@ -1,0 +1,168 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    background-color: #f1f4f8; /* Soft off-white typical of these dashboards */
+}
+
+#login-view {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    width: 100%;
+    max-width: 420px;
+    padding: 40px 32px;
+    border-radius: 16px;
+    box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05); /* very soft shadow */
+    text-align: center;
+}
+
+.logo-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 24px;
+}
+
+.logo {
+    width: 52px;
+    height: 52px;
+    background-color: #029C8B; /* Exact matching teal */
+    color: white;
+    font-size: 24px;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 14px; /* A bit more square than circle */
+}
+
+h2 {
+    color: #1e293b;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.subtitle {
+    color: #64748b;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 32px;
+}
+
+.role-toggle {
+    display: flex;
+    background-color: #f8fafc;
+    border: 1px solid #f1f5f9;
+    border-radius: 12px;
+    padding: 4px;
+    margin-bottom: 30px;
+}
+
+.role-btn {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 0;
+    background: transparent;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 600;
+    color: #64748b;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.role-btn svg {
+    color: #94a3b8;
+    transition: all 0.2s ease;
+}
+
+.role-btn.active {
+    background-color: #ffffff;
+    color: #029C8B;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.role-btn.active svg {
+    color: #029C8B;
+}
+
+.form-group {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    color: #334155;
+    font-size: 14px;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.input-wrapper {
+    display: flex;
+    align-items: center;
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: 0 16px;
+    background-color: #f8fafc;
+    transition: all 0.2s ease;
+}
+
+.input-wrapper:focus-within {
+    border-color: #029C8B;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(2, 156, 139, 0.1);
+}
+
+.input-icon {
+    color: #94a3b8;
+    margin-right: 12px;
+}
+
+.input-wrapper input {
+    width: 100%;
+    padding: 14px 0;
+    border: none;
+    outline: none;
+    background: transparent;
+    font-size: 14px;
+    color: #1e293b;
+}
+
+.input-wrapper input::placeholder {
+    color: #94a3b8;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 14px;
+    background-color: #029C8B;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    margin-top: 12px;
+}
+
+.submit-btn:hover {
+    background-color: #028274;
+}
