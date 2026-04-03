@@ -64,6 +64,16 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }
 
+    // Auto-login jika datang dari portal utama
+    const urlParams = new URLSearchParams(window.location.search);
+    if (urlParams.get('autologin') === '1') {
+        const loginView = document.getElementById('login-view');
+        const dashboardView = document.getElementById('dashboard-view');
+        if (loginView) loginView.style.display = 'none';
+        if (dashboardView) dashboardView.style.display = 'block';
+        switchMenu('grade-report');
+    }
+
     const signOutBtn = document.getElementById('sign-out-btn');
     if(signOutBtn) {
         signOutBtn.addEventListener('click', (e) => {
